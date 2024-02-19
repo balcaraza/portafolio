@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.red {
+  color: #ff2b51;
+  size: 30px;
+}
+.white {
+  color: white;
+  size: 30px;
+}
+.circle {
+    width: 400px; /* Ancho del círculo */
+    height: 400px; /* Altura del círculo */
+    border: 10px solid #ff2b51; /* Borde sólido rojo */
+    border-radius: 50%; /* Hace que los bordes sean redondeados (formando un círculo) */
+    background-color: transparent; /* Fondo transparente */
+}
+.texto{
+    padding: 10px 5px 2px 5px;
+    
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+.left-column {
+  flex-grow: 1; /* La columna izquierda ocupa todo el espacio restante */
+}
+
+.right-column {
+
+  position: sticky;
+  top: 0; /* Se pegará al principio del contenedor cuando se haga scroll */
+  height: 100%; /* La columna derecha ocupa el 100% de la altura del viewport */
+}
+
+header {
+  background: black;
+  z-index: 100;
+  justify-content: center;
+}
+nav a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+nav a:hover,
+nav a.active {
+  color: #ff2b51;
+}
+section {
+  min-height: 100vh;
+  
+  background: black;
+
+}
+section:nth-child(odd) {
+  background: black
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50px; /* Ancho del navbar */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  list-style-type: none;
+  
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-align: center;
+}
+
+.navbar a {
+  display: block;
+  padding: 50px 0;
+  color: #fff;
+  text-decoration: none;
+  writing-mode: vertical-rl; /* Esto rota el texto verticalmente */
+  transform: rotate(360deg); /* Esto ajusta la orientación del texto */
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
